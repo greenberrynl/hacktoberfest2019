@@ -2,6 +2,25 @@
 
 This repo is used for the workshop given at the kickoff Meetup of Hacktoberfest 2019 at Greenberry in Utrecht.
 
+## 🤔 What to do?
+
+Add your info to the `people.json`.
+
+**Example format**
+
+```json
+//...
+{
+  "name": "Ramon Gebben",
+  "github": "@RamonGebben",
+  "twitter": "@RamonGebben",
+  "linkedin": "https: //www.linkedin.com/in/ramon-gebben-88039b85"
+}
+//...
+```
+
+Submit your PR.
+
 ## 🧐 What's inside?
 
 A quick look at the files and directories you'll see in this project.
