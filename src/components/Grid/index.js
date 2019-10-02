@@ -2,6 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithubAlt,
+  faTwitter,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+
 const Wrapper = styled.section`
   display: grid;
   grid-gap: 1.25rem;
@@ -62,6 +69,10 @@ const ContentContainer = styled.div`
   font-size: 14px;
 `;
 
+const Icon = styled(FontAwesomeIcon)`
+  margin-right: 10px;
+`;
+
 const Grid = ({ data }) => (
   <Wrapper>
     {data.map(({ node: { name, github, twitter, linkedin } }) => (
@@ -80,15 +91,18 @@ const Grid = ({ data }) => (
               href={`https://github.com/${github.replace('@', '')}`}
               target="_blank"
             >
+              <Icon icon={faGithubAlt} />
               {github}
             </Link>
             <Link
               href={`https://twitter.com/${twitter.replace('@', '')}`}
               target="_blank"
             >
+              <Icon icon={faTwitter} />
               {twitter}
             </Link>
             <Link href={linkedin} target="_blank">
+              <Icon icon={faLinkedinIn} />
               LinkedIn
             </Link>
           </Content>
