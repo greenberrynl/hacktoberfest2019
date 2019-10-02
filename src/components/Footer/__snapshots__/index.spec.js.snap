@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Footer should render 1`] = `
+.emotion-4 {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  padding: 0 135px;
+}
+
+.emotion-0 {
+  height: 100%;
+  display: block;
+  justify-self: start;
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-0 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  transform: scale(1.04,1.04);
+}
+
+.emotion-2 {
+  height: 100%;
+  display: block;
+  justify-self: end;
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-2 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  transform: scale(1.04,1.04);
+}
+
+<footer
+  className="emotion-4 emotion-5"
+>
+  <a
+    className="emotion-0 emotion-1"
+    href="https://www.greenberry.nl/"
+    target="_blank"
+  >
+    <img
+      alt="Greenberry"
+      src="totally real file"
+    />
+  </a>
+  <a
+    className="emotion-2 emotion-3"
+    href="https://hacktoberfest.digitalocean.com/"
+    target="_blank"
+  >
+    <img
+      alt="Hacktoberfest 2019"
+      src="totally real file"
+    />
+  </a>
+</footer>
+`;

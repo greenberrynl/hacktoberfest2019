@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Grid should render 1`] = `
+.emotion-18 {
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: repeat(3,1fr);
+  margin: 100px auto;
+}
+
+.emotion-16 {
+  position: relative;
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: 80px 1fr;
+  width: 100%;
+  background-color: #1d2c4e;
+  padding: 1.25rem;
+  box-shadow: 0px 50px 100px rgba(0,0,0,0.2);
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-16:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  transform: scale(1.04,1.04);
+}
+
+.emotion-2 {
+  max-width: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14px;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: white;
+}
+
+.emotion-12 {
+  margin: 1.25rem 0 0;
+}
+
+.emotion-6 {
+  display: block;
+}
+
+<section
+  className="emotion-18 emotion-19"
+>
+  <div
+    className="emotion-16 emotion-17"
+  >
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <img
+        className="emotion-0 emotion-1"
+        src="https://github.com/RamonGebben.png?size=200"
+      />
+    </div>
+    <div
+      className="emotion-14 emotion-15"
+    >
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <h3>
+          Ramon Gebben
+        </h3>
+      </div>
+      <div
+        className="emotion-12 emotion-13"
+      >
+        <a
+          className="emotion-6 emotion-7"
+          href="https://github.com/RamonGebben"
+          target="_blank"
+        >
+          @RamonGebben
+        </a>
+        <a
+          className="emotion-6 emotion-7"
+          href="https://twitter.com/RamonGebben"
+          target="_blank"
+        >
+          @RamonGebben
+        </a>
+        <a
+          className="emotion-6 emotion-7"
+          href="https: //www.linkedin.com/in/ramon-gebben-88039b85"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

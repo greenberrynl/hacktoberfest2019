@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link
-          href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+          href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap"
           rel="stylesheet"
         />
       </head>

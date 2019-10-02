@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Header from './index';
+import Footer from './index';
 
-describe('components/Header', () => {
+describe('components/Footer', () => {
   it('should render', () => {
-    const component = renderer.create(<Header />);
+    const component = renderer.create(<Footer />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

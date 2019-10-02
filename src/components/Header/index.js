@@ -1,37 +1,47 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from '@emotion/styled';
 
-const Header = ({ siteTitle }) => (
-  <header style={{ background: '#999', marginBottom: '1.45rem' }}>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
+import githubCorner from '../../images/github_corner.svg';
+
+const GithubButton = styled.a`
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  & > img {
+    height: 100%;
+  }
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    transform: translate(20px, -20px);
+  }
+`;
+
+const Wrapper = styled.header`
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 200px;
+`;
+
+const Header = () => (
+  <Wrapper>
+    <GithubButton
+      target="_blank"
+      href="https://github.com/greenberrynl/hacktoberfest2019"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+      <img src={githubCorner} alt="Github" />
+    </GithubButton>
+  </Wrapper>
 );
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
+Header.propTypes = {};
 
-Header.defaultProps = {
-  siteTitle: '',
-};
+Header.defaultProps = {};
 
 export default Header;

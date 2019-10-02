@@ -4,20 +4,12 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Grid from '../components/Grid';
 
 const IndexPage = ({ data: { allPeopleJson } }) => (
   <Layout>
     <SEO title="Home" />
-    {allPeopleJson.edges.map(
-      ({ node: { name, github, twitter, linkedin } }) => (
-        <li key={name}>
-          <h3>{name}</h3>
-          <span>{github}</span>
-          <span>{twitter}</span>
-          <span>{linkedin}</span>
-        </li>
-      )
-    )}
+    <Grid data={allPeopleJson.edges} />
   </Layout>
 );
 

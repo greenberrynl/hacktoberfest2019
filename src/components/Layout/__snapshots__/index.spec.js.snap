@@ -1,71 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Layout should render 1`] = `
-Array [
+.emotion-12 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0 1fr auto;
+  grid-template-areas: 'header' 'main' 'footer';
+}
+
+.emotion-2 {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+
+.emotion-0 {
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-0 > img {
+  height: 100%;
+}
+
+.emotion-0:hover {
+  -webkit-transform: translate(20px,-20px);
+  -ms-transform: translate(20px,-20px);
+  transform: translate(20px,-20px);
+}
+
+.emotion-4 {
+  grid-area: main;
+  padding: 0 135px;
+}
+
+.emotion-10 {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  padding: 0 135px;
+}
+
+.emotion-6 {
+  height: 100%;
+  display: block;
+  justify-self: start;
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-6 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-6:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  transform: scale(1.04,1.04);
+}
+
+.emotion-8 {
+  height: 100%;
+  display: block;
+  justify-self: end;
+  -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+  transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+
+.emotion-8 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-8:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -ms-transform: scale(1.04,1.04);
+  transform: scale(1.04,1.04);
+}
+
+<div
+  className="emotion-12 emotion-13"
+>
   <header
-    style={
-      Object {
-        "background": "#999",
-        "marginBottom": "1.45rem",
-      }
-    }
+    className="emotion-2 emotion-3"
   >
-    <div
-      style={
-        Object {
-          "margin": "0 auto",
-          "maxWidth": 960,
-          "padding": "1.45rem 1.0875rem",
-        }
-      }
+    <a
+      className="emotion-0 emotion-1"
+      href="https://github.com/greenberrynl/hacktoberfest2019"
+      target="_blank"
     >
-      <h1
-        style={
-          Object {
-            "margin": 0,
-          }
-        }
-      >
-        <a
-          href="/"
-          style={
-            Object {
-              "color": "white",
-              "textDecoration": "none",
-            }
-          }
-        >
-          No title
-        </a>
-      </h1>
-    </div>
-  </header>,
-  <div
-    style={
-      Object {
-        "margin": "0 auto",
-        "maxWidth": 960,
-        "padding": "0px 1.0875rem 1.45rem",
-        "paddingTop": 0,
-      }
-    }
+      <img
+        alt="Github"
+        src="totally real file"
+      />
+    </a>
+  </header>
+  <main
+    className="emotion-4 emotion-5"
   >
-    <main>
-      <h1>
-        Hello layout
-      </h1>
-    </main>
-    <footer>
-      <hr />
-      <h3>
-        This is footer
-      </h3>
-      <a
-        href="https://www.greenberry.nl"
-      >
-        Greenberry
-      </a>
-    </footer>
-  </div>,
-]
+    <h1>
+      Hello layout
+    </h1>
+  </main>
+  <footer
+    className="emotion-10 emotion-11"
+  >
+    <a
+      className="emotion-6 emotion-7"
+      href="https://www.greenberry.nl/"
+      target="_blank"
+    >
+      <img
+        alt="Greenberry"
+        src="totally real file"
+      />
+    </a>
+    <a
+      className="emotion-8 emotion-9"
+      href="https://hacktoberfest.digitalocean.com/"
+      target="_blank"
+    >
+      <img
+        alt="Hacktoberfest 2019"
+        src="totally real file"
+      />
+    </a>
+  </footer>
+</div>
 `;
