@@ -1,0 +1,10 @@
+{
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "atlascode.jira.workingProject": {
+    "id": "10037",
+    "name": "Greenberry - Greenberry Website",
+    "key": "GBWEB"
+  }
+}

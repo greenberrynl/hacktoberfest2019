@@ -1,0 +1,49 @@
+image: greenberry/puppeteer-node:latest
+
+stages:
+  - build
+  - test
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+    - cache/Cypress
+    - node_modules
+
+install_dependencies:
+  stage: build
+  script:
+    - yarn install --frozen-lockfile
+  artifacts:
+    paths:
+      - node_modules/
+
+lint:
+  stage: test
+  script: yarn lint
+
+unit_test:
+  stage: test
+  script: yarn test
+  coverage: /^All files\s+\|\s+(\d+(?:\.\d+)*).+/
+
+.job_template: &job
+  stage: test
+  script:
+    - NODE_ENV=production yarn build
+    - yarn serve &
+    - yarn percy exec yarn cypress run --record --key $CYPRESS_RECORD_KEY --parallel
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
+
+integration_test-1:
+  <<: *job
