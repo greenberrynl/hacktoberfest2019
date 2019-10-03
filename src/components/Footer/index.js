@@ -3,15 +3,20 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import greenberryLogo from '../../images/greenberry_logo.svg';
-import hacktoberfestLogo from '../../images/hacktoberfest_logo.svg';
+import hacktoberfestLogo from '../../images/hacktoberfest2019_logo.svg';
+
+const breakpoints = [600, 1400];
+
+const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
 
 const HacktoberButton = styled.a`
   height: 100%;
-  display: block;
+  display: flex;
   justify-self: end;
+  align-items: center;
   & > img {
     height: 100%;
-    width: 100%;
+    max-height: 100%;
   }
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   &:hover {
@@ -21,11 +26,12 @@ const HacktoberButton = styled.a`
 
 const GreenberryButton = styled.a`
   height: 100%;
-  display: block;
+  display: flex;
   justify-self: start;
+  align-items: center;
   & > img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    max-height: 100%;
   }
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   &:hover {
@@ -35,14 +41,21 @@ const GreenberryButton = styled.a`
 
 const Wrapper = styled.footer`
   position: relative;
-  height: 200px;
+  height: 150px;
   width: 100%;
   grid-area: footer;
 
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, auto);
 
-  padding: 0 135px;
+  padding: 20px;
+  ${mq[0]} {
+    padding: 20px 70px;
+  }
+  ${mq[1]} {
+    height: 200px;
+    padding: 20px 140px;
+  }
 `;
 
 const Footer = () => (
