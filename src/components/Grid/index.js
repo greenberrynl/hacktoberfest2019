@@ -7,6 +7,7 @@ import {
   faGithubAlt,
   faTwitter,
   faLinkedinIn,
+  faReddit
 } from '@fortawesome/free-brands-svg-icons';
 
 const breakpoints = [900, 1200];
@@ -85,7 +86,7 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Grid = ({ data }) => (
   <Wrapper>
-    {data.map(({ node: { name, github, twitter, linkedin } }) => (
+    {data.map(({ node: { name, github, twitter, linkedin, reddit } }) => (
       <Card key={name}>
         <ImageContainer>
           <UserIcon
@@ -117,6 +118,15 @@ const Grid = ({ data }) => (
               <Link href={linkedin} target="_blank">
                 <Icon icon={faLinkedinIn} />
                 LinkedIn
+              </Link>
+            )}
+            {reddit && reddit !== 'N/A' && (
+              <Link
+                href={`https://reddit.com/${reddit}`}
+                target="_blank"
+              >
+                <Icon icon={faReddit} />
+                {reddit}
               </Link>
             )}
           </Content>

@@ -22,6 +22,7 @@ IndexPage.propTypes = {
           github: PropTypes.string.isRequired,
           twitter: PropTypes.string.isRequired,
           linkedin: PropTypes.string.isRequired,
+          reddit: PropTypes.string.isRequired,
         })
       ).isRequired,
     }).isRequired,
@@ -39,6 +40,7 @@ export const query = graphql`
           github
           twitter
           linkedin
+          reddit
         }
       }
     }
