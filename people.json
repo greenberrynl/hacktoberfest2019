@@ -30,6 +30,12 @@
     "linkedin": "https://www.linkedin.com/in/rolandvanipenburg/"
   },
   {
+    "name": "Alex Pedersen",
+    "github": "@alexpdr",
+    "twitter": "@alexpdr",
+    "linkedin": "https://www.linkedin.com/in/alexpdrs/"
+  },
+  {
     "name": "Jonathan de Jong",
     "github": "@shadowjonathan",
     "twitter": "@shadejohnny7",
@@ -52,5 +58,11 @@
     "github": "@the-mo",
     "twitter": "@followmohammed",
     "linkedin": "https://www.linkedin.com/in/mohammedf"
+  },
+  {
+    "name": "Frank S Pelletier",
+    "github": "@veltaine",
+    "twitter": "@gveltaine",
+    "linkedin": "https://www.linkedin.com/in/fspellet"
   }
 ]
