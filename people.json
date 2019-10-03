@@ -1,5 +1,11 @@
 [
   {
+    "name": "Floris ten Hove",
+    "github": "@floristenhove",
+    "twitter": "@floristenhove",
+    "linkedin": "https://www.linkedin.com/in/floristenhove/"
+  },
+  {
     "name": "Ramon Gebben",
     "github": "@RamonGebben",
     "twitter": "@RamonGebben",
@@ -10,14 +16,13 @@
     "github": "@vaibhav111tandon",
     "twitter": "N/A",
     "linkedin": "https://www.linkedin.com/in/vaibhav111tandon"
-  },  
+  },
   {
     "name": "Shashank Shukla",
     "github": "@shash137",
     "twitter": "@shash137",
     "linkedin": "https://www.linkedin.com/in/shashank-shukla-4b960a169/"
-  }
-  ,
+  },
   {
     "name": "Todd Merrill",
     "github": "@toddmerrill"
