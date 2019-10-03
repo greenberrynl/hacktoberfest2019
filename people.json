@@ -24,11 +24,24 @@
     "linkedin": "https://www.linkedin.com/in/shashank-shukla-4b960a169/"
   },
   {
+    "name": "Roland van Ipenburg",
+    "github": "@ipenburg",
+    "twitter": "@ipenburg",
+    "linkedin": "https://www.linkedin.com/in/rolandvanipenburg/"
+  },
+  {
+    "name": "Alex Pedersen",
+    "github": "@alexpdr",
+    "twitter": "@alexpdr",
+    "linkedin": "https://www.linkedin.com/in/alexpdrs/"
+  },
+  {
     "name": "Jonathan de Jong",
     "github": "@shadowjonathan",
     "twitter": "@shadejohnny7",
     "linkedin": "https://www.linkedin.com/in/jonathan-de-jong/"
   },
+  {
     "name": "Wilbert Schepenaar",
     "github": "@wilbo",
     "twitter": "@wilboships",
@@ -45,5 +58,23 @@
     "github": "@the-mo",
     "twitter": "@followmohammed",
     "linkedin": "https://www.linkedin.com/in/mohammedf"
+  },
+  {
+    "name": "Frank S Pelletier",
+    "github": "@veltaine",
+    "twitter": "@gveltaine",
+    "linkedin": "https://www.linkedin.com/in/fspellet"
+  },
+  {
+    "name": "Vidushi Jain",
+    "github": "@VidushiJain30",
+    "twitter": "@VidushiJain",
+    "linkedin": "https://www.linkedin.com/in/vidushi-jain-b27618169/"
+  },
+  {
+    "name": "Apurva Vishwakarma",
+    "github": "@iamapurva",
+    "twitter": "@ApurvaVishwakarma",
+    "linkedin": "https://www.linkedin.com/in/apurvavishwakarma/"
   }
 ]
