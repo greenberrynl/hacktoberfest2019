@@ -104,17 +104,21 @@ const Grid = ({ data }) => (
               <Icon icon={faGithubAlt} />
               {github}
             </Link>
-            <Link
-              href={`https://twitter.com/${twitter.replace('@', '')}`}
-              target="_blank"
-            >
-              <Icon icon={faTwitter} />
-              {twitter}
-            </Link>
-            <Link href={linkedin} target="_blank">
-              <Icon icon={faLinkedinIn} />
-              LinkedIn
-            </Link>
+            {twitter && twitter !== 'N/A' && (
+              <Link
+                href={`https://twitter.com/${twitter.replace('@', '')}`}
+                target="_blank"
+              >
+                <Icon icon={faTwitter} />
+                {twitter}
+              </Link>
+            )}
+            {linkedin && linkedin !== 'N/A' && (
+              <Link href={linkedin} target="_blank">
+                <Icon icon={faLinkedinIn} />
+                LinkedIn
+              </Link>
+            )}
           </Content>
         </ContentContainer>
       </Card>
