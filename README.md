@@ -14,7 +14,7 @@ Add your info to the `people.json`
   "name": "Ramon Gebben",
   "github": "@RamonGebben",
   "twitter": "@RamonGebben",
-  "linkedin": "https: //www.linkedin.com/in/ramon-gebben-88039b85"
+  "linkedin": "https://www.linkedin.com/in/ramon-gebben-88039b85"
 }
 //...
 ```
