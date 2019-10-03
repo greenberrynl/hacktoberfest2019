@@ -4,6 +4,10 @@ import styled from '@emotion/styled';
 
 import githubCorner from '../../images/github_corner.svg';
 
+const breakpoints = [600, 1400];
+
+const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+
 const GithubButton = styled.a`
   height: 100%;
   display: block;
@@ -15,7 +19,10 @@ const GithubButton = styled.a`
   }
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   &:hover {
-    transform: translate(20px, -20px);
+    transform: translate(10px, -10px);
+    ${mq[0]} {
+      transform: translate(20px, -20px);
+    }
   }
 `;
 
@@ -26,7 +33,13 @@ const Wrapper = styled.header`
   width: 100%;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 100px;
+  ${mq[0]} {
+    height: 150px;
+  }
+  ${mq[1]} {
+    height: 200px;
+  }
 `;
 
 const Header = () => (

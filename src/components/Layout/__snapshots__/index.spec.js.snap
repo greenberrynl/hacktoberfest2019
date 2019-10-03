@@ -16,7 +16,19 @@ exports[`components/Layout should render 1`] = `
   width: 100%;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 100px;
+}
+
+@media (min-width:600px) {
+  .emotion-2 {
+    height: 150px;
+  }
+}
+
+@media (min-width:1400px) {
+  .emotion-2 {
+    height: 200px;
+  }
 }
 
 .emotion-0 {
@@ -34,37 +46,77 @@ exports[`components/Layout should render 1`] = `
 }
 
 .emotion-0:hover {
-  -webkit-transform: translate(20px,-20px);
-  -ms-transform: translate(20px,-20px);
-  transform: translate(20px,-20px);
+  -webkit-transform: translate(10px,-10px);
+  -ms-transform: translate(10px,-10px);
+  transform: translate(10px,-10px);
+}
+
+@media (min-width:600px) {
+  .emotion-0:hover {
+    -webkit-transform: translate(20px,-20px);
+    -ms-transform: translate(20px,-20px);
+    transform: translate(20px,-20px);
+  }
 }
 
 .emotion-4 {
   grid-area: main;
-  padding: 0 135px;
+  padding: 0 20px;
+}
+
+@media (min-width:600px) {
+  .emotion-4 {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width:1400px) {
+  .emotion-4 {
+    padding: 0 140px;
+  }
 }
 
 .emotion-10 {
   position: relative;
-  height: 200px;
+  height: 150px;
   width: 100%;
   grid-area: footer;
   display: grid;
-  grid-template-columns: repeat(2,50%);
-  padding: 0 135px;
+  grid-template-columns: repeat(2,auto);
+  padding: 20px;
+}
+
+@media (min-width:600px) {
+  .emotion-10 {
+    padding: 20px 70px;
+  }
+}
+
+@media (min-width:1400px) {
+  .emotion-10 {
+    height: 200px;
+    padding: 20px 140px;
+  }
 }
 
 .emotion-6 {
   height: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   justify-self: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
   transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
 }
 
 .emotion-6 > img {
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  max-height: 100%;
 }
 
 .emotion-6:hover {
@@ -75,15 +127,22 @@ exports[`components/Layout should render 1`] = `
 
 .emotion-8 {
   height: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   justify-self: end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
   transition: all 0.4s cubic-bezier(0.165,0.84,0.44,1);
 }
 
 .emotion-8 > img {
   height: 100%;
-  width: 100%;
+  max-height: 100%;
 }
 
 .emotion-8:hover {

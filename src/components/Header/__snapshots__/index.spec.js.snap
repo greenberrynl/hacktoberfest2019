@@ -8,7 +8,19 @@ exports[`components/Header should render 1`] = `
   width: 100%;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 100px;
+}
+
+@media (min-width:600px) {
+  .emotion-2 {
+    height: 150px;
+  }
+}
+
+@media (min-width:1400px) {
+  .emotion-2 {
+    height: 200px;
+  }
 }
 
 .emotion-0 {
@@ -26,9 +38,17 @@ exports[`components/Header should render 1`] = `
 }
 
 .emotion-0:hover {
-  -webkit-transform: translate(20px,-20px);
-  -ms-transform: translate(20px,-20px);
-  transform: translate(20px,-20px);
+  -webkit-transform: translate(10px,-10px);
+  -ms-transform: translate(10px,-10px);
+  transform: translate(10px,-10px);
+}
+
+@media (min-width:600px) {
+  .emotion-0:hover {
+    -webkit-transform: translate(20px,-20px);
+    -ms-transform: translate(20px,-20px);
+    transform: translate(20px,-20px);
+  }
 }
 
 <header

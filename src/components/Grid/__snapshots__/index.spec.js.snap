@@ -4,8 +4,20 @@ exports[`components/Grid should render 1`] = `
 .emotion-24 {
   display: grid;
   grid-gap: 1.25rem;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 1fr;
   margin: 100px auto;
+}
+
+@media (min-width:900px) {
+  .emotion-24 {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-24 {
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 .emotion-22 {
