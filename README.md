@@ -4,7 +4,7 @@ This repo is used for the workshop given at the kickoff Meetup of Hacktoberfest 
 
 ## 🤔 What to do?
 
-Add your info to the `people.json`.
+Add your info to the `people.json`
 
 **Example format**
 
@@ -14,7 +14,7 @@ Add your info to the `people.json`.
   "name": "Ramon Gebben",
   "github": "@RamonGebben",
   "twitter": "@RamonGebben",
-  "linkedin": "https: //www.linkedin.com/in/ramon-gebben-88039b85"
+  "linkedin": "https://www.linkedin.com/in/ramon-gebben-88039b85"
 }
 //...
 ```

@@ -9,11 +9,21 @@ import {
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
 
+const breakpoints = [900, 1200];
+
+const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+
 const Wrapper = styled.section`
   display: grid;
   grid-gap: 1.25rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   margin: 100px auto;
+  ${mq[0]} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  ${mq[1]} {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const Card = styled.div`
@@ -94,17 +104,21 @@ const Grid = ({ data }) => (
               <Icon icon={faGithubAlt} />
               {github}
             </Link>
-            <Link
-              href={`https://twitter.com/${twitter.replace('@', '')}`}
-              target="_blank"
-            >
-              <Icon icon={faTwitter} />
-              {twitter}
-            </Link>
-            <Link href={linkedin} target="_blank">
-              <Icon icon={faLinkedinIn} />
-              LinkedIn
-            </Link>
+            {twitter && twitter !== 'N/A' && (
+              <Link
+                href={`https://twitter.com/${twitter.replace('@', '')}`}
+                target="_blank"
+              >
+                <Icon icon={faTwitter} />
+                {twitter}
+              </Link>
+            )}
+            {linkedin && linkedin !== 'N/A' && (
+              <Link href={linkedin} target="_blank">
+                <Icon icon={faLinkedinIn} />
+                LinkedIn
+              </Link>
+            )}
           </Content>
         </ContentContainer>
       </Card>

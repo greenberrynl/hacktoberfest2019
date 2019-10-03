@@ -2,8 +2,6 @@ import React from 'react';
 import { injectGlobal } from 'emotion';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { pathOr } from 'ramda';
-import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -54,9 +52,19 @@ injectGlobal`
   }
 `;
 
+const breakpoints = [600, 1400];
+
+const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+
 const Content = styled.main`
   grid-area: main;
-  padding: 0 135px;
+  padding: 0 20px;
+  ${mq[0]} {
+    padding: 0 70px;
+  }
+  ${mq[1]} {
+    padding: 0 140px;
+  }
 `;
 
 const Wrapper = styled.div`
