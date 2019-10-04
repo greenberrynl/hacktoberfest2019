@@ -1,5 +1,11 @@
 [
   {
+    "name": "Floris ten Hove",
+    "github": "@floristenhove",
+    "twitter": "@floristenhove",
+    "linkedin": "https://www.linkedin.com/in/floristenhove/"
+  },
+  {
     "name": "Ramon Gebben",
     "github": "@RamonGebben",
     "twitter": "@RamonGebben",
@@ -10,17 +16,75 @@
     "github": "@vaibhav111tandon",
     "twitter": "N/A",
     "linkedin": "https://www.linkedin.com/in/vaibhav111tandon"
-  },  
+  },
   {
     "name": "Shashank Shukla",
     "github": "@shash137",
     "twitter": "@shash137",
     "linkedin": "https://www.linkedin.com/in/shashank-shukla-4b960a169/"
-  }
-  ,
+  },
+  {
+    "name": "Wesley Peeters",
+    "github": "@aracQuango",
+    "reddit": "u/i-dont-like-gucci",
+    "linkedin": "https://www.linkedin.com/in/wesley-peeters-29001a140/"
+  },
+    "name": "Roland van Ipenburg",
+    "github": "@ipenburg",
+    "twitter": "@ipenburg",
+    "linkedin": "https://www.linkedin.com/in/rolandvanipenburg/"
+  },
+  {
+    "name": "Alex Pedersen",
+    "github": "@alexpdr",
+    "twitter": "@alexpdr",
+    "linkedin": "https://www.linkedin.com/in/alexpdrs/"
+  },
+  {
+    "name": "Jonathan de Jong",
+    "github": "@shadowjonathan",
+    "twitter": "@shadejohnny7",
+    "linkedin": "https://www.linkedin.com/in/jonathan-de-jong/"
+  },
+  {
+    "name": "Wilbert Schepenaar",
+    "github": "@wilbo",
+    "twitter": "@wilboships",
+    "linkedin": "https://www.linkedin.com/in/wilbert-schepenaar/"
+  },
   {
     "name": "Todd Merrill",
     "github": "@toddmerrill",
     "reddit": "@groovectomy"
+  },
+  {
+    "name": "Mohammed Fahsi",
+    "github": "@the-mo",
+    "twitter": "@followmohammed",
+    "linkedin": "https://www.linkedin.com/in/mohammedf"
+  },
+  {
+    "name": "Frank S Pelletier",
+    "github": "@veltaine",
+    "twitter": "@gveltaine",
+    "linkedin": "https://www.linkedin.com/in/fspellet"
+  },
+  {
+    "name": "Vidushi Jain",
+    "github": "@VidushiJain30",
+    "twitter": "@VidushiJain",
+    "linkedin": "https://www.linkedin.com/in/vidushi-jain-b27618169/"
+  },
+  {
+    "name": "Apurva Vishwakarma",
+    "github": "@iamapurva",
+    "twitter": "@ApurvaVishwakarma",
+    "linkedin": "https://www.linkedin.com/in/apurvavishwakarma/"
+  },
+  {  
+    "name": "Sam Wolfs",
+    "github": "@SamWolfs",
+    "twitter": "@SamWolfs2",
+    "linkedin": "https://www.linkedin.com/in/sam-wolfs-4a72b0145/"
   }
 ]
